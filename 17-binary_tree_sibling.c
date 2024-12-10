@@ -1,12 +1,12 @@
 #include "binary_trees.h"
 
 /**
- *binary_tree_sibling - est une fonction qui
- *trouve le frere ou la soeur d'un noeud
- *@node: pointeur sur le noeud pour trouver le frere ou soeur
- *Return: NULL si noeud ou parent est NULL
- *si @node: n'as pas de frere ou soeur return NULL
- */
+*binary_tree_sibling - is a function that
+*finds the sibling of a node
+*@node: pointer to the node to find the sibling
+*Return: NULL if node or parent is NULL
+*if @node: has no sibling return NULL
+*/
 binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 {
 	if (node == NULL || node->parent == NULL)
