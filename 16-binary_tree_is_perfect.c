@@ -49,7 +49,7 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 
 	height = binary_tree_height_child(tree);
 	size = binary_tree_size(tree);
-	expected_size = (size_t)pow(2, height + 1) - 1;
+	expected_size = (1U << (height + 1)) - 1;
 
 	return (size == expected_size ? 1 : 0);
 }
